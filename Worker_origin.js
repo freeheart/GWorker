@@ -36,7 +36,7 @@ var AI_fight=function(){
 		SocketManager.getInstance().sendMessage(C2SCommandEnum.C2S_BATTLE_SKILL_CAST, o2);
 	}
 	if(b.isPopUp ==true){
-		if(b.BattlefieldScenePanle.getChildByName("layer_1000") == null){
+		if(b.BattlefieldScenePanle.getChildByName("layer_1000") != null){
 			b.closeBattleScene();
 		}
 	}
